@@ -7,10 +7,10 @@ body{
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas: 
     "my-header my-header my-header"
-    "paginas paginas presentacion"
-    "paginas paginas presentacion"
-    "paginas paginas experiencia"
-    "paginas paginas experiencia"
+    "main main main"
+    "main main main"
+    "main main main"
+    "main main main"
     "my-footer my-footer my-footer"
     ;
     
@@ -30,9 +30,6 @@ body{
     font-size: 16px;
     color: whitesmoke;
     margin: 10px;
-    
-    
-    
     
   }
   nav ul li a{
@@ -72,6 +69,9 @@ body{
     grid-area: experiencia;
     color: blueviolet;
   }
+  #paginas{
+    grid-area: my-pages;
+  }
 
   footer{ 
     grid-area: my-footer;
@@ -93,8 +93,6 @@ body{
    
     padding: 10px;
     text-align: center;
-    
-
   }
   footer ul li:hover{
     background-color: #eca023;
@@ -104,12 +102,21 @@ body{
     
   }
   main{
-
-    grid-area: paginas;
+    display: grid;
+    grid-area: main;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "my-pages my-pages presentacion"
+    "my-pages my-pages presentacion"
+    "my-pages my-pages experiencia"
+    "my-pages my-pages experiencia"
+    ;
   }
   section{
       background-color: lightblue;
       border: 1px solid white;
+
   }
  
   body{
