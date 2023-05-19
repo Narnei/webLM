@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<presentacion>
+<parrafo>
+Este texto se lee desde un xml
+<parrafo>
+<skills>
+<skill>HTML</skill>
+<skill>CSS</skill>
+<skill>JS</skill>
+<skills>
+</presentacion>
