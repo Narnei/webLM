@@ -2,7 +2,7 @@
 <presentacion>
 <parrafo>
 Este texto se lee desde un xml
-<parrafo>
+</parrafo>
 <skills>
 <skill>HTML</skill>
 <skill>CSS</skill>
