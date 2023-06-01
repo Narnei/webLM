@@ -7,5 +7,5 @@ Este texto se lee desde un xml
 <skill>HTML</skill>
 <skill>CSS</skill>
 <skill>JS</skill>
-<skills>
+</skills>
 </presentacion>
