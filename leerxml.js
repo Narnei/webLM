@@ -10,22 +10,22 @@ window.onload = function() {
 };
 function mostrarDatos(xml) {
   var xmlDoc = xml.responseXML;
-  var skills = xmlDoc.getElementsByTagName("skill");
-  var paragraphs = xmlDoc.getElementsByTagName("parrafo");
+  var skills = presentacion.getElementsByTagName("skill");
+  var paragraphs = presentacion.getElementsByTagName("parrafo");
   
 
   
-  var skillsList = document.getElementById("skills-list");
+  var skillsList = index.getElementById("skills-list");
   for (var i = 0; i < skills.length; i++) {
     var skill = skills[i].childNodes[0].nodeValue;
-    var li = document.createElement("li");
+    var li = index.createElement("li");
     li.innerHTML = skill;
     skillsList.appendChild(li);
   }
-  var presentationDiv = document.getElementById("presentation");
+  var presentationDiv = index.getElementById("presentation");
   for (var j = 0; j < paragraphs.length; j++) {
     var paragraph = paragraphs[j].childNodes[0].nodeValue;
-    var p = document.createElement("p");
+    var p = index.createElement("p");
     p.innerHTML = paragraph;
     presentationDiv.appendChild(p);
   }
