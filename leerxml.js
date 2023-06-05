@@ -10,7 +10,7 @@ window.onload = function() {
 };
 function mostrarDatos(xml) {
   var xmlDoc = xml.responseXML;
-  var skills = xmlDoc.getElementsByTagName("skill");
+  var skills = xmlDoc.getElementsByTagName("skills");
   var paragraphs = xmlDoc.getElementsByTagName("parrafo");
   
 
