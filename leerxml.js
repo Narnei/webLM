@@ -22,7 +22,7 @@ function mostrarDatos(xml) {
     li.innerHTML = skill;
     skillsList.appendChild(li);
   }
-  var presentationDiv = index.getElementById("presentacion");
+  var presentationDiv = index.getElementById("presentation");
   for (var j = 0; j < paragraphs.length; j++) {
     var paragraph = paragraphs[j].childNodes[0].nodeValue;
     var p = index.createElement("p");
