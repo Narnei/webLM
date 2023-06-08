@@ -15,17 +15,17 @@ function mostrarDatos(xml) {
   
 
   
-  var skillsList = index.getElementById("skills-list");
+  var skillsList = document.getElementById("skills-list");
   for (var i = 0; i < skills.length; i++) {
     var skill = skills[i].childNodes[0].nodeValue;
-    var li = index.createElement("li");
+    var li = document.createElement("li");
     li.innerHTML = skill;
     skillsList.appendChild(li);
   }
-  var presentationDiv = index.getElementById("presentation");
+  var presentationDiv = document.getElementById("presentation");
   for (var j = 0; j < paragraphs.length; j++) {
     var paragraph = paragraphs[j].childNodes[0].nodeValue;
-    var p = index.createElement("p");
+    var p = document.createElement("p");
     p.innerHTML = paragraph;
     presentationDiv.appendChild(p);
   }
